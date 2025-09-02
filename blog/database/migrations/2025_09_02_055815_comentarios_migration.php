@@ -11,24 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts',function(Blueprint $table){
-            $table->id();
-            $table->string('title');
-            $table->string('description');
-            $table->string('img',100);
+        Schema::create('comentarios',function(Blueprint $table){
+            $table-> integer ('user_id');
+            $table->integer  ('post_id');
             $table->string('content');
-            $table->integer('likes');
-            $table->integer('user_id');
             $table->timestamps();
         });
-        
     }
-
-    /**
-     * Reverse the migrations.
-     */
+    
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('comentarios');
     }
 };
