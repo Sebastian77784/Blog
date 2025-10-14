@@ -19,7 +19,7 @@
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/dashboard/post">
+                <a class="nav-link" href="/dashboard/posts">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Post</span></a>
             </li>
